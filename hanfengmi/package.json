@@ -2,7 +2,7 @@
   "name": "hanfengmi",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://hanfengmi.github.io/hanfengmi",
+  "homepage" : "http://hanfengmi.github.io/hanfengmi/build",
   "dependencies": {
     "axios": "^0.18.0",
     "highlight.js": "^9.15.6",

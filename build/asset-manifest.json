@@ -1,13 +1,13 @@
 {
-  "main.css": "/hanfengmi/build/static/css/main.67979282.chunk.css",
-  "main.js": "/hanfengmi/build/static/js/main.fb30f075.chunk.js",
-  "main.js.map": "/hanfengmi/build/static/js/main.fb30f075.chunk.js.map",
-  "runtime~main.js": "/hanfengmi/build/static/js/runtime~main.61aef0a0.js",
-  "runtime~main.js.map": "/hanfengmi/build/static/js/runtime~main.61aef0a0.js.map",
-  "static/js/2.0e9a4c78.chunk.js": "/hanfengmi/build/static/js/2.0e9a4c78.chunk.js",
-  "static/js/2.0e9a4c78.chunk.js.map": "/hanfengmi/build/static/js/2.0e9a4c78.chunk.js.map",
-  "index.html": "/hanfengmi/build/index.html",
-  "precache-manifest.9e69fb5049a5d17e4a6a6e72d59e0d3f.js": "/hanfengmi/build/precache-manifest.9e69fb5049a5d17e4a6a6e72d59e0d3f.js",
-  "service-worker.js": "/hanfengmi/build/service-worker.js",
-  "static/css/main.67979282.chunk.css.map": "/hanfengmi/build/static/css/main.67979282.chunk.css.map"
+  "main.css": "/build/static/css/main.67979282.chunk.css",
+  "main.js": "/build/static/js/main.83a789f9.chunk.js",
+  "main.js.map": "/build/static/js/main.83a789f9.chunk.js.map",
+  "runtime~main.js": "/build/static/js/runtime~main.9df7376b.js",
+  "runtime~main.js.map": "/build/static/js/runtime~main.9df7376b.js.map",
+  "static/js/2.0e9a4c78.chunk.js": "/build/static/js/2.0e9a4c78.chunk.js",
+  "static/js/2.0e9a4c78.chunk.js.map": "/build/static/js/2.0e9a4c78.chunk.js.map",
+  "index.html": "/build/index.html",
+  "precache-manifest.09436d0e1c8b6f014999982234b02091.js": "/build/precache-manifest.09436d0e1c8b6f014999982234b02091.js",
+  "service-worker.js": "/build/service-worker.js",
+  "static/css/main.67979282.chunk.css.map": "/build/static/css/main.67979282.chunk.css.map"
 }

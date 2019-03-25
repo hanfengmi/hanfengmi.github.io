@@ -6,6 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>大猴小憨</title>
+
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth <= 500) {
+                        docEl.style.fontSize = 195 * (clientWidth / 1000) + 'px';
+                    }else if ( 500 < clientWidth <= 1000){
+                        docEl.style.fontSize = 195 * (clientWidth / 1000) + 'px';
+                    }else {
+                        docEl.style.fontSize = 69.44 * (clientWidth / 1000) + 'px';
+                    }
+                    // if (clientWidth >= 1800) {
+                    //     docEl.style.fontSize = 70 * (clientWidth / 1000) + 'px';
+                    // } else if (clientWidth <= 500) {
+                    //     docEl.style.fontSize = 195 * (clientWidth / 1000) + 'px';
+                    // } else {
+                    //     docEl.style.fontSize = 70 * (clientWidth / 1000) + 'px';
+                    // }
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+
+            doc.oncontextmenu=function(e){
+                e.preventDefault();
+            };
+        })(document, window);
+    </script>
 </head>
 
 <body>

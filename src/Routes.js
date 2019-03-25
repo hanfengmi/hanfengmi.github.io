@@ -9,7 +9,7 @@ import Home from './Home/index';
 
 class Routes extends React.Component {
     render(){
-        console.log('进来了吗？ Routes')
+        // console.log('进来了吗？ Routes 1')
         return (
             <HashRouter>
                 <Switch>

@@ -7,7 +7,7 @@ module.exports = merge(common, {
     devtool: 'inline-source-map',
     devServer: {
         host: 'localhost',
-        port: 8008,
+        port: 8009,
         // 实现实时更新，
         // 告诉dev server 在哪里查找文件
         contentBase:path.join(__dirname, './dist'),

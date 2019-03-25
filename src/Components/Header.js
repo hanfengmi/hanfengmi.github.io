@@ -1,12 +1,14 @@
 import React from 'react';
 import './Header.scss'
+import Logo from './common/Logo'
 
 class Header extends React.Component {
 
     render() {
         return (
             <div className="header">
-                我来组成头部
+                <Logo />
+                {/* <Menu /> */}
             </div>
         )
     }

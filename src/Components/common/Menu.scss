@@ -1,0 +1,10 @@
+.header-menu {
+    flex:5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    li {
+        margin:0 0.3rem;
+        line-height: 0.4rem;
+    }
+}

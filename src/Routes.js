@@ -1,4 +1,5 @@
 import 'normalize.css'; 
+import './style.scss';
 import React from 'react';
 import { BrowserRouter, HashRouter, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';

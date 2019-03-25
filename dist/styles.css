@@ -348,7 +348,36 @@ template {
   display: none;
 }
 
+body {
+  font-size: 0.14rem; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  visibility: hidden; }
+
 .header {
-  height: 30px;
-  background: rgba(0, 0, 0, 0.3); }
+  height: 0.5rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.header-logo {
+  flex: 1; }
+  .header-logo img {
+    width: 0.4rem;
+    height: 0.4rem; }
+
+.header-menu {
+  flex: 5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .header-menu li {
+    margin: 0 0.3rem;
+    line-height: 0.4rem; }
 

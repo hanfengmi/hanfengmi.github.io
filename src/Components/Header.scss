@@ -1,7 +1,21 @@
 .header {
-    height:0.5rem;
+    height:0.6rem;
     padding:0 1rem;
+    width:100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: fixed;
+    top:0;
+    left:0; 
+}
+.header-active {
+    background: #fff;
+    transition: 0.5s;
+    .header-menu {
+        a {
+            color:rgb(94, 144, 190);
+        }
+    }
 }

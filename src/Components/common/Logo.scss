@@ -1,7 +1,27 @@
 .header-logo {
     flex:1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
     img {
         width:0.4rem;
         height:0.4rem;
+        margin-right:0.1rem;
+    }
+    span {
+        font-size: 0.3rem;
+        text-shadow: 0 0 2px black; 
+        color: white;
+        letter-spacing: 0.03rem;
+        position: relative;
+    }
+    &:hover {
+        span {
+            text-shadow: none;
+            background: linear-gradient(20deg,#009FFF, #ec2F4B);
+            -webkit-background-clip: text;
+            color: transparent;
+            transition: 0.5s;
+        }
     }
 }

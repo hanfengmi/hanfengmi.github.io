@@ -7,9 +7,7 @@ class Frame extends React.Component {
         return (
             <Fragment>
                 <Header />
-                <div className="header-to-content">
-                        {this.props.children}
-                </div>
+                {this.props.children}
                 <Footer />
             </Fragment>
         )

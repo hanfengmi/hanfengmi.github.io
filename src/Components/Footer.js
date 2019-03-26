@@ -1,12 +1,12 @@
 import React from 'react';
-import './Header.scss'
+import './Footer.scss'
 
 class Footer extends React.Component {
 
     render() {
         return (
-            <div className="header">
-                我来组成jio
+            <div className="footer">
+                大家好,我是jio
             </div>
         )
     }

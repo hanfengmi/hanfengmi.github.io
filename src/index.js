@@ -12,7 +12,6 @@ import storeTree from './store';
 import Routes from './Routes';
 
 const store = createStore(storeTree, applyMiddleware(thunk));
-console.log('进来了吗？ Index')
 
 ReactDom.render(
     <Provider store={store}>

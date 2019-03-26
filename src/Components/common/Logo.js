@@ -7,6 +7,7 @@ class Logo extends React.Component {
         return (
             <div className="header-logo">
                 <img src={logo} />
+                <span>McKonalds</span>
             </div>
         )
     }

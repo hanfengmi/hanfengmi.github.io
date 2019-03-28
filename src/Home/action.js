@@ -11,7 +11,11 @@ export const getTodoList = (params, fn) => async (dispatch) => {
         //     method: 'GET',
         //     data: params
         // });
-        await dispatch(listData("result.data"));
+        const result = {
+            res:200,
+            data:['1','2','3']
+        }
+        await dispatch(listData(result));
         fn();
     } catch (error) {
 

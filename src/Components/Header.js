@@ -9,17 +9,18 @@ class Header extends React.Component {
         super(props);
         this.state = {
             top:true,
-            scroll:false
+            scroll:false,
+            fixed:props.fixed,
         }
 
         this.debounceScroll = debounce(()=>{
-            console.log(1111111)
+            // console.log(1111111)
             this.setState({
                 top: false
             })
         }, 40)
         this.debounceNoScroll = debounce(()=>{
-            console.log(22222222)
+            // console.log(22222222)
             this.setState({
                 top: true
             })
@@ -44,14 +45,14 @@ class Header extends React.Component {
     }
 
     MouseEnter = debounce((e)=>{
-        console.log('鼠标移入')
+        // console.log('鼠标移入')
         this.setState({
             top:false
         })
     },200)
 
     MouseLeave = debounce((e)=>{
-        console.log('鼠标移chu')
+        // console.log('鼠标移chu')
         if(this.state.scroll){
             return;
         }
@@ -62,9 +63,9 @@ class Header extends React.Component {
 
 
     render() {
-        const { top } = this.state;
+        const { top,fixed } = this.state;
         return (
-            <div className={`header ${top?'':'header-active'}`} onMouseEnter={this.MouseEnter.bind(this)} onMouseLeave={this.MouseLeave.bind(this)} >
+            <div className={`header ${!top || fixed ? 'header-active' : ''}`} onMouseEnter={this.MouseEnter.bind(this)} onMouseLeave={this.MouseLeave.bind(this)} >
                 <Logo />
                 <Menu />
             </div>

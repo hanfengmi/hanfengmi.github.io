@@ -6,7 +6,7 @@ class Frame extends React.Component {
     render() {
         return (
             <Fragment>
-                <Header />
+                <Header fixed={this.props.fixed}/>
                 {this.props.children}
                 <Footer />
             </Fragment>

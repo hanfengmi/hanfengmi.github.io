@@ -5,10 +5,10 @@ const initState = {
 const todoListReducer = (state=initState, action) => {
     switch (action.type) {
         case 'LIST_DATA':
+        // console.log(action.payload.data)
             return {
                 ...state,
-                ...action.payload,
-                listData: action.payload.listData
+                listData: action.payload.data
             };
         default: 
             return {

@@ -7,7 +7,7 @@ export default function lazyLoader(importComponent) {
       const Component = lazy(importComponent)
 
       return (
-        <Suspense fallback={<h1>Still Loading…</h1>}>
+        <Suspense fallback={<div style={{width:'100%',height:'100vh',background:'#181818'}}></div>}>
             <Component />
         </Suspense>
       )

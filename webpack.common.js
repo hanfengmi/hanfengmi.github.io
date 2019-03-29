@@ -19,7 +19,12 @@ module.exports = {
         new HtmlWebpackPlugin({template:'./public/index.html'}),
         new MiniCssExtractPlugin({
             filename: "[name].css"
-        })
+        }),
+        new webpack.ProvidePlugin({
+                $:"jquery",
+                jQuery:"jquery",
+                "window.jQuery":"jquery"
+            })
     ],
     module: {
         rules: [

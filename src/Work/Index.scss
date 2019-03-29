@@ -1,4 +1,26 @@
 .work-content {
-    min-height:100vh;
-    
+    height:calc(100vh - #{0.6rem});
+    margin-top:0.6rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    .work-banner {
+        flex:1;
+        width:4rem;
+        background: url('./img/work_banner.png') left top/ auto 100% no-repeat;
+        height:100%;
+        position: fixed;
+        left:0;
+        top:0.6rem;
+    }
+    .work-container {
+        flex:2;
+        height:10rem;
+        margin-left:4rem;
+        background: #ecedef;
+        overflow: hidden;
+        padding:0.2rem 0.3rem;
+    }
 }

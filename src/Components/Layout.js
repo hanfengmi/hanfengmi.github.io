@@ -8,7 +8,11 @@ class Frame extends React.Component {
             <Fragment>
                 <Header fixed={this.props.fixed}/>
                 {this.props.children}
-                <Footer />
+                {
+                    this.props.noFoot?
+                    '':
+                    <Footer />
+                }
             </Fragment>
         )
     }

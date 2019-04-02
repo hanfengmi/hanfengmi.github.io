@@ -1,6 +1,7 @@
 import React from 'react';
 import Frame from '../Components/Layout';
 import './Index.scss';
+import Button from '../Components/common/Button';
 class Work extends React.Component {
 
     componentDidMount(){
@@ -19,6 +20,12 @@ class Work extends React.Component {
                 <div className="work-content">
                     <div className="work-banner"></div>
                     <div className="work-container">
+                        <div className="work-header">
+                            <Button text="Han" />
+                            <Button style="btn-shine" text="Zhao" />
+                            <Button style="btn-slide-line" text="Ke" />
+                            <Button style="btn-slide-line center" text="Hello" />
+                        </div>
                     </div>
                 </div>
             </Frame>

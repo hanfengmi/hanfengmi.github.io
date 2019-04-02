@@ -12,10 +12,10 @@ class Home extends React.Component {
         return (
             <Frame>
                 <div className="content">
-
+                      
                 </div>
                 <div className="content2">
-
+                    
                 </div>
             </Frame>
         )

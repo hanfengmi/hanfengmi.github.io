@@ -1,0 +1,37 @@
+@keyframes role {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    20% {
+        transform:rotate(72deg) scale(1.2);
+    }
+    40% {
+        transform:rotate(144deg) scale(1);
+    }
+    50% {
+        transform:rotate(180deg) scale(1.2);
+    }
+    60% {
+        transform:rotate(216deg) scale(1);
+    }
+    80% {
+        transform:rotate(288deg) scale(1.2);
+    }
+    100% {
+        transform:rotate(360deg) scale(1);
+    }
+}
+.about-me {
+    cursor: pointer;
+    position: relative;
+    .about-me-png {
+        width:0.3rem;
+        height:0.3rem;
+    }
+    &:hover {
+        .about-me-png {
+            animation: role 2s linear infinite;
+        }
+    }
+    
+}

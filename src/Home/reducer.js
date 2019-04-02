@@ -1,5 +1,5 @@
 const initState = {
-    listData: []
+    listData: {}
 };
 
 const todoListReducer = (state=initState, action) => {

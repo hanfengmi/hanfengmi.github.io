@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.scss';
 import Logo from './common/Logo';
 import Menu from './common/Menu';
+import AboutMe from './common/AboutMe';
 import { debounce } from '../../utils/util';
 
 class Header extends React.Component {
@@ -68,6 +69,12 @@ class Header extends React.Component {
             <div className={`header ${!top || fixed ? 'header-active' : ''}`} onMouseEnter={this.MouseEnter.bind(this)} onMouseLeave={this.MouseLeave.bind(this)} >
                 <Logo />
                 <Menu />
+                {
+                    !top || fixed ?
+                    <AboutMe />:
+                    ''
+                }
+                
             </div>
         )
     }

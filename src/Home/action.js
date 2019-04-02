@@ -1,4 +1,5 @@
-// import request from '../../utils/request';
+import fetch from '../../utils/fetchWrapper';
+console.log(fetch,'fetch')
 
 const listData = res => ({
     type: 'LIST_DATA',
@@ -11,10 +12,8 @@ export const getTodoList = (params, fn) => async (dispatch) => {
         //     method: 'GET',
         //     data: params
         // });
-        const result = {
-            res:200,
-            data:['1','2','3']
-        }
+        let result = fetch.get('https://api.github.com/repos/hanfengmi/hanfengmi.github.io/issues',)
+        
         await dispatch(listData(result));
         fn();
     } catch (error) {

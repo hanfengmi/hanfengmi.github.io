@@ -17,7 +17,7 @@ class Routes extends React.Component {
             <HashRouter>
                 <Switch>
                     <Route exact path={`/`} component={() => <Home />} />
-                    <Route exact path={`/work`} component={() => <Work />} />
+                    <Route path={`/work`} component={() => <Work />} />
                     <Route component={() => <PageNotFoundFront />} />
                 </Switch>
             </HashRouter>

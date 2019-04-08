@@ -3,6 +3,7 @@ import './Front.scss';
 import { connect } from 'react-redux';
 import { getFrontList } from './action';
 import Loading from '../Components/Loading';
+import BlogItem from '../Components/BlogItem'
 class Front extends React.Component {
     componentDidMount(){
         this.props.getFrontList();
@@ -11,16 +12,14 @@ class Front extends React.Component {
         const {
             frontList
           } = this.props;
-        console.log(frontList,'frontList')
         const List = frontList.map((e,i)=>{
             return (
-                <div key={e.title}>{e.title}</div>
+                <BlogItem key={e.title} data={e} />
             )
         })
         return (
             <Loading loading={this.props.loading} result={this.props.frontList}>
                 <div className="work-front">
-                    front
                     {List}
                 </div>
             </Loading>

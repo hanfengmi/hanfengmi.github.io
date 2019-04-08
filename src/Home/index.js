@@ -8,14 +8,18 @@ class Home extends React.Component {
         this.props.getTodoList();
     }
     render(){
-        console.log(this.props.todo)
+        const {
+            login,
+            name
+        } = this.props.todo
+        console.log(this.props.todo, 'this.props.todo')
         return (
             <Frame>
                 <div className="content">
-                      
+                    
                 </div>
                 <div className="content2">
-                    
+                        {/* My Name is {name} */}
                 </div>
             </Frame>
         )
@@ -23,7 +27,7 @@ class Home extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-    todo:state.todoListReducer
+    todo:state.todoListReducer.listData
 });
 
 export default connect(mapStateToProps, { getTodoList })(Home);

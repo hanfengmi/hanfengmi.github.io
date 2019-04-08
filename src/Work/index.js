@@ -8,17 +8,6 @@ import Node from './Node.js';
 import Tool from './Tool.js';
 import Other from './Other.js';
 class Work extends React.Component {
-
-    componentDidMount(){
-        $('.work-banner').scroll(function () {
-            // $('.work-list').scrollTop($(this).scrollTop());
-            console.log(12312321)
-        });
-        $('.work-list-box').scroll(function () {
-            // $('.work-list').scrollTop($(this).scrollTop());
-            console.log(1111111111)
-        });
-    }
     render(){
         return (
             <Frame fixed noFoot>

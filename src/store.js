@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
 import todoListReducer from './Home/reducer';
-// import todoDetailReducer from './pages/todoDetail/reducer';
+import workListReducer from './Work/reducer';
 // import oneGameReducer from './pages/oneGame/reducer';
 // import userReducer from './pages/user/reducer'
 
 const storeTree = combineReducers({
     todoListReducer,
-    // todoDetailReducer,
+    workListReducer,
     // oneGameReducer,
     // userReducer
 });

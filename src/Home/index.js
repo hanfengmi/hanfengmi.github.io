@@ -3,6 +3,7 @@ import Frame from '../Components/Layout';
 import { connect } from 'react-redux';
 import './Index.scss';
 import { getTodoList } from './action';
+import CanvasBall from './CanvasBall'
 class Home extends React.Component {
     componentDidMount(){
         this.props.getTodoList();
@@ -19,6 +20,7 @@ class Home extends React.Component {
                     
                 </div>
                 <div className="content2">
+                    <CanvasBall />
                         {/* My Name is {name} */}
                 </div>
             </Frame>

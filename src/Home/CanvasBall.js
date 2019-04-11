@@ -122,7 +122,7 @@ class CanvasBall extends React.Component {
                 var scale = fl / (fl - this.z);
                 ctx.save();
                 ctx.fillStyle = "#FFF";
-                ctx.font = "12px serif";
+                ctx.font = `12px serif`;
                 ctx.fillStyle = "#00AAAA";
                 ctx.fillText(this.texter,this.x+canWidth,this.y+canHeight);
                 ctx.restore();

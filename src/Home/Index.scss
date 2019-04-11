@@ -5,11 +5,24 @@
     
 }
 
+@keyframes bgposition {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
 .content2 {
     min-height:100vh;
-    background: linear-gradient(45deg,#0f2027,#203a43,#2c5364);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    background: linear-gradient(45deg,  #373B44 0%, #4286f4 20%, #3f2b96 40%, #93291E 60%, #BA8B02 80%,#6f27b0 100%);
+    background-size: 700% 100%;
+    background-position: 0 0;
+    animation: bgposition 25s infinite linear alternate;
 }

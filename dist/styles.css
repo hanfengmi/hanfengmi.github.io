@@ -360,6 +360,9 @@ a {
   color: #000;
   text-decoration: none; }
 
+p {
+  margin: 0; }
+
 .header {
   height: 0.6rem;
   padding: 0 1rem;
@@ -753,12 +756,58 @@ a {
   margin: 0.2rem auto;
   width: 7rem;
   box-sizing: border-box;
-  padding: 0.1rem 0.4rem;
-  cursor: pointer; }
+  padding: 0.1rem 0.4rem; }
   .blog-item:hover {
     box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.4); }
   .blog-item h5 {
     font-size: 0.18rem;
     font-weight: 500;
     margin: 0.1rem 0; }
+  .blog-item .label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .blog-item .label .lable-box {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .blog-item .label .lable-box span {
+        padding: 0.05rem 0.1rem;
+        margin: 0 0.1rem;
+        border-radius: 0.05rem;
+        color: #fff;
+        font-size: 0.12rem;
+        line-height: 0.18rem;
+        transition: 0.2s; }
+        .blog-item .label .lable-box span:hover {
+          transform: scale(1.2);
+          box-shadow: 2px 2px 4px 0 #262626;
+          cursor: pointer; }
+    .blog-item .label .create-time {
+      color: #c3c3c3; }
+
+@keyframes color {
+  0% {
+    color: #2a272c; }
+  20% {
+    color: #4286f4; }
+  40% {
+    color: #2980B9; }
+  60% {
+    color: #91EAE4; }
+  80% {
+    color: #7F7FD5; }
+  100% {
+    color: #240b36; } }
+  .blog-item .to-github {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0.3rem; }
+    .blog-item .to-github .fa-github-square {
+      color: #2a272c;
+      cursor: pointer; }
+      .blog-item .to-github .fa-github-square:hover {
+        color: red;
+        animation: color 5s linear infinite; }
 

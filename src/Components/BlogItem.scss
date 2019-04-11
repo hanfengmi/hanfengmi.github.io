@@ -5,7 +5,6 @@
     width:7rem;
     box-sizing: border-box;
     padding:0.1rem 0.4rem;
-    cursor: pointer;
     &:hover {
         box-shadow: 2px 2px 4px 0px rgba(0,0,0,.4);
 
@@ -14,5 +13,74 @@
         font-size:0.18rem;
         font-weight: 500;
         margin:0.1rem 0;
+    }
+    .label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .lable-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+
+                padding:0.05rem 0.1rem;
+                margin:0 0.1rem;
+                border-radius: 0.05rem;
+                color:#fff;
+                font-size:0.12rem;
+                line-height: 0.18rem;
+                transition: 0.2s;
+                &:hover {
+                    transform:scale(1.2);
+                    box-shadow: 2px 2px 4px 0 rgb(38, 38, 38);
+                    cursor: pointer;
+                }
+            }
+        }
+        .create-time {
+            color:#c3c3c3;
+        }
+    }
+
+    @keyframes color {
+        0% {
+            color:rgb(42, 39, 44);
+        }
+        20% {
+            color:#4286f4;
+        }
+        40% {
+            color:#2980B9;
+        }
+        60% {
+            color:#91EAE4;
+            
+        }
+        80% {
+            color:#7F7FD5;
+        }
+        100% {
+            color:#240b36;
+        }
+
+
+
+
+    }
+    .to-github {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top:0.3rem;
+        .fa-github-square {
+            color:rgb(42, 39, 44);
+            cursor: pointer;
+            &:hover {
+                color:red;
+                animation: color 5s linear infinite;
+            }
+        }
     }
 }

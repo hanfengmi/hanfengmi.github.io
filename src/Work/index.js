@@ -18,7 +18,7 @@ class Work extends React.Component {
                             <Link to="/work/front"><Button text="前端" /></Link>
                             <Link to="/work/node"><Button style="btn-shine" text="Node" /></Link>
                             <Link to="/work/tool"><Button style="btn-slide-line" text="工具" /></Link>
-                            <Link to="/work/other"><Button style="btn-slide-line center" text="杂项" /></Link>
+                            <Link to="/work/other"><Button style="btn-slide-line center" text="随笔" /></Link>
                         </div>
                         <div className="work-box">
                             <Route path={`/work` } exact component={() => <Front />}/>

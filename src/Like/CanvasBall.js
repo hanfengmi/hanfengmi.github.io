@@ -144,8 +144,8 @@ class CanvasBall extends React.Component {
             }
             requestAnimationFrame(animate);
         }
-
-        function rotateX(){
+        // 需要深入理解下
+        function rotateX(){ //30
             var cos = Math.cos(angleX);
             var sin = Math.sin(angleX);
             for(var i=0;i<balls.length;i++){
@@ -187,14 +187,14 @@ class CanvasBall extends React.Component {
     render(){
        
         return (
-            <Fragment>
+            <div className="canvas-ball">
                 <label className="canvas-button">
                     <input type="checkbox" />
                     <span></span>
                     <span></span>
                 </label>
                 <canvas id="rollBall" width="600" height="600" style={{display:'block',margin:'0 auto'}}></canvas>
-            </Fragment>
+            </div>
         )
     }
 }

@@ -12,8 +12,8 @@ class Menu extends React.Component {
                 <Link to="/work">
                     <li>工作</li>
                 </Link>
-                <Link to="/other">
-                    <li>杂项</li>
+                <Link to="/like">
+                    <li>好玩</li>
                 </Link>
             </ul>
         )

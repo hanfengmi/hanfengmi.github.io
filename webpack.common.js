@@ -13,7 +13,7 @@ module.exports = {
         // 根据入口起点名称动态生成bundle名称
         filename: '[name].[hash].js',
         path: path.resolve(__dirname, './dist'),
-        publicPath:'/' // IMPORTANT 打包的时候要改成 ./
+        publicPath:'./' // IMPORTANT 打包的时候要改成 ./
     },
     plugins: [
         new HtmlWebpackPlugin({template:'./public/index.html'}),

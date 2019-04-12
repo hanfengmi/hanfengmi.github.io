@@ -1,6 +1,8 @@
 body {
     font-size:0.14rem;
-
+    &::-webkit-scrollbar { width: 0 !important }
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
 }
 ul,li {
     margin:0;

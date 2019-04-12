@@ -6,7 +6,7 @@ class Footer extends React.Component {
     render() {
         return (
             <div className="footer">
-                大家好,我是jio
+                我是一个可爱的尾部
             </div>
         )
     }

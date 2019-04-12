@@ -2,27 +2,26 @@
     min-height:100vh;
     background: url('../Components/img/bg.jpg') left top/100%  no-repeat;
     background-attachment: fixed;
-    
 }
 
-@keyframes bgposition {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 100% 0;
-    }
-}
 
-.content2 {
-    min-height:100vh;
+.content-index {
+    min-height:calc(100vh - #{0.5rem});
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-
-    background: linear-gradient(45deg,  #373B44 0%, #4286f4 20%, #3f2b96 40%, #93291E 60%, #BA8B02 80%,#6f27b0 100%);
-    background-size: 700% 100%;
-    background-position: 0 0;
-    animation: bgposition 25s infinite linear alternate;
+    color:#fff;
+    font-size:0.6rem;
+    text-shadow: 1px 2px 4px #000;
+    background: linear-gradient(20deg,#58a 20%, #fb3 20%, #fb3 60%, #e45b5a 60%);
+    background-attachment: fixed;
+    
+}
+.content-index-s {
+    background: linear-gradient(60deg,#58a 33%, #fb3 33%, #fb3 66%, #e45b5a 66%);
+    background-attachment: fixed;
+}
+.content-index-t {
+    background: linear-gradient(100deg,#58a 50%, #fb3 50%, #fb3 80%, #e45b5a 80%);
+    background-attachment: fixed;
 }

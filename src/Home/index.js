@@ -3,7 +3,6 @@ import Frame from '../Components/Layout';
 import { connect } from 'react-redux';
 import './Index.scss';
 import { getTodoList } from './action';
-import CanvasBall from './CanvasBall'
 class Home extends React.Component {
     componentDidMount(){
         this.props.getTodoList();
@@ -19,9 +18,14 @@ class Home extends React.Component {
                 <div className="content">
                     
                 </div>
-                <div className="content2">
-                    <CanvasBall />
-                        {/* My Name is {name} */}
+                <div className="content-index">
+                    这是第一屏
+                </div>
+                <div className="content-index content-index-s">
+                    这是第二屏
+                </div>
+                <div className="content-index content-index-t">
+                    这是第三屏
                 </div>
             </Frame>
         )
